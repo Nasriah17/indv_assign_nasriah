@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Contact Detail</title>
+    <style>
+        .image-container {
+            position: relative;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .image {
+            display: block;
+            width: 114%;
+            height: auto;
+        }
+
+        #logo {
+            position: absolute;
+            top: 20%; 
+            left: -25%; 
+            width: 100%; 
+            height: auto;
+            animation: riseAnimation 5s ease;
+        }
+
+        #insta-logo {
+            position: absolute;
+            top: 74.5%; 
+            left: 5%; 
+            width: 20%; 
+            height: auto;
+        }
+
+        @keyframes riseAnimation {
+            0% {
+                transform: translateY(100%); 
+            }
+            100% {
+                transform: translateY(0%); 
+            }
+        }
+	#video-container {
+            position: absolute;
+            top: 80%;
+            left: 60%;
+            transform: translate(-50%, -50%);
+            z-index: 1; 
+        }
+
+        #video {
+            width: 300px; 
+            height: 200px;
+        }
+	 .hyperlink {
+            position: absolute;
+            color: #fff;
+            font-size: 24px;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .hyperlink1 {
+            top: 7%;
+            left: 8%;
+        }
+
+        .hyperlink2 {
+            top: 7%;
+            left: 16%;
+        }
+
+        .hyperlink3 {
+            top: 7%;
+            left: 27%;
+        }
+
+        .hyperlink4 {
+            top: 7%;
+            left: 70%;
+        }
+
+        .hyperlink5 {
+            top: 7%;
+            left: 85%;
+        }
+
+        .hyperlink6 {
+            top: 7%;
+            left: 96%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="image-container">
+        <img src="image/mycontact.jpg" alt="Image" class="image">
+
+        <div id="logo">
+            <img src="image/contact.jpg" alt="Logo">
+        </div>
+
+        <div id="insta-logo">
+            <a href="https://www.instagram.com/nrhns_nis/"><img src="image/insta.png" alt="Image"></a>
+        </div>
+        
+       <div id="audio-container">
+            <audio controls autoplay>
+                <source src="sound/sound.mp3" type="audio/mp3">
+            </audio>
+        </div>
+
+        <a href="index.html" class="hyperlink hyperlink1">HOME</a>
+        <a href="biodata.html" class="hyperlink hyperlink2">BIODATA</a>
+        <a href="experience.html" class="hyperlink hyperlink3">EXPERIENCE</a>
+        <a href="education.html" class="hyperlink hyperlink4">EDUCATION</a>
+        <a href="awards.html" class="hyperlink hyperlink5">AWARDS</a>
+        <a href="contact.html" class="hyperlink hyperlink6"><b>CONTACT</b></a> 
+    </div>
+</body>
+</html>

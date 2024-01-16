@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>experience</title>
+    <style>
+
+        .image-container {
+            position: relative;
+        }
+
+        .drift-shape {
+            position: absolute;
+            top: 14%;
+            left: 10%;
+            transform: translate(-50%, -50%);
+            width: 1400px;
+            height: 220px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: driftAnimation 20s linear infinite;
+        }
+
+        @keyframes driftAnimation {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        .text {
+            font-size: 80px;
+            font-family: 'Abundant Harvest', serif;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .hyperlink {
+            position: absolute;
+            color: #8b4513;
+            font-size: 24px;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .hyperlink1 {
+            top: 7%;
+            left: 7%;
+        }
+
+        .hyperlink2 {
+            top: 7%;
+            left: 14%;
+        }
+
+	 .hyperlink3 {
+            top: 7%;
+            left: 24%;
+        }
+
+	 .hyperlink4 {
+            top: 7%;
+            left: 62%;
+        }
+
+	 .hyperlink5 {
+            top: 7%;
+            left: 75%;
+        }
+
+	 .hyperlink6 {
+            top: 7%;
+            left: 85%;
+        }
+
+	.hyperlink7 {
+            top: 7%;
+            left: 45%;
+        }
+
+
+        .drift-shape .hyperlink {
+            position: static;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img class="background-image" src="image/experience.jpg" alt="Background Image" height="800" width="1460" border="4" align="center">
+        
+        <a href="index.html" class="hyperlink hyperlink1">HOME</a>
+        <a href="biodata.html" class="hyperlink hyperlink2">BIODATA</a>
+	<a href="experiences.html" class="hyperlink hyperlink3"><b>EXPERIENCE</b></a>
+	<a href="education.html" class="hyperlink hyperlink4">EDUCATION</a>
+	<a href="awards.html" class="hyperlink hyperlink5">AWARDS</a>
+	<a href="contact.html" class="hyperlink hyperlink6">CONTACT</a>
+	<a href="gallery.html" class="hyperlink hyperlink7">GALLERY</a>
+  
+        
+        <div class="drift-shape">
+            <div class="text">MY EXPERIENCE</div>
+        </div>
+    </div>
+</body>
+</html>
+

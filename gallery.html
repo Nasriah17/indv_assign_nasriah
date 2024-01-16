@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        .image-container {
+            position: relative;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .image {
+            display: block;
+            width: 113%;
+            height: auto;
+        }
+
+        #image {
+            position: absolute;
+            top: 31%; 
+            left: -35%; 
+            width: 100%; 
+            height: auto;
+            animation: riseAnimation 5s ease;
+        }
+
+	#image2 {
+            position: absolute;
+            top: 31%; 
+            left: -14%; 
+            width: 100%; 
+            height: auto;
+            animation: riseAnimation 5s ease;
+        }
+
+	#image3 {
+            position: absolute;
+            top: 70%; 
+            left: -19%; 
+            width: 100%; 
+            height: auto;
+            animation: riseAnimation 5s ease;
+        }
+
+	#image4 {
+            position: absolute;
+            top: 70%; 
+            left: 9%; 
+            width: 100%; 
+            height: auto;
+            animation: riseAnimation 5s ease;
+        }
+
+	#image5 {
+            position: absolute;
+            top: 31%; 
+            left: 31%; 
+            width: 100%; 
+            height: auto;
+            animation: riseAnimation 5s ease;
+        }
+
+	#image6 {
+            position: absolute;
+            top: 31%; 
+            left: 50%; 
+            width: 100%; 
+            height: auto;
+            animation: riseAnimation 5s ease;
+        }
+
+	#image7 {
+            position: absolute;
+            top: 70%; 
+            left: 37%; 
+            width: 100%; 
+            height: auto;
+            animation: riseAnimation 5s ease;
+        }
+
+
+        @keyframes riseAnimation {
+            0% {
+                transform: translateY(100%); 
+            }
+            100% {
+                transform: translateY(0%); 
+            }
+        }
+	
+        #video-container {
+            position: absolute;
+            top: 55%;
+            left: 59%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+
+        #video {
+            width: 340px;
+            height: 240px;
+        }
+
+	 .hyperlink {
+            position: absolute;
+            color: #8b4513;
+            font-size: 24px;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .hyperlink1 {
+            top: 6%;
+            left: 8%;
+        }
+
+        .hyperlink2 {
+            top: 6%;
+            left: 16%;
+        }
+
+        .hyperlink3 {
+            top: 6%;
+            left: 27%;
+        }
+
+        .hyperlink4 {
+            top: 6%;
+            left: 50%;
+        }
+
+        .hyperlink5 {
+            top: 6%;
+            left: 70%;
+        }
+
+        .hyperlink6 {
+            top: 6%;
+            left: 84.5%;
+        }
+
+	.hyperlink7 {
+            top: 6%;
+            left: 96%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="image-container">
+        <img src="image/gallery.jpg" alt="Image" class="image" height="100" width="100" border="4" align="center">
+
+        <div id="image">
+            <img src="image/nas1.JPG" alt="Image" width="252" height="336">
+        </div>
+
+	  <div id="image2">
+            <img src="image/nas2.JPG" alt="Image" width="252" height="336">
+        </div>
+
+	  <div id="image3">
+            <img src="image/nas3.JPG" alt="Image" width="336" height="252">
+        </div>
+
+	  <div id="image4">
+            <img src="image/nas4.JPG" alt="Image" width="336" height="252">
+        </div>
+
+	   <div id="image5">
+            <img src="image/family.JPG" alt="Image" width="225" height="336">
+        </div>
+
+	   <div id="image6">
+            <img src="image/family2.jpg" alt="Image" width="225" height="336">
+        </div>
+
+	   <div id="image7">
+            <img src="image/nas5.JPG" alt="Image" width="336" height="252">
+        </div>
+        
+       <div id="video-container">
+            <video id="video" controls>
+                <source src="video/nas.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <a href="index.html" class="hyperlink hyperlink1">HOME</a>
+        <a href="biodata.html" class="hyperlink hyperlink2">BIODATA</a>
+        <a href="experience.html" class="hyperlink hyperlink3">EXPERIENCE</a>
+	<a href="gallery.html" class="hyperlink hyperlink4"><b>GALLERY</b></a>
+        <a href="education.html" class="hyperlink hyperlink5">EDUCATION</a>
+        <a href="awards.html" class="hyperlink hyperlink6">AWARDS</a>
+        <a href="contact.html" class="hyperlink hyperlink7">CONTACT</a> 
+    </div>
+</body>
+</html>
